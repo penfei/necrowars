@@ -1,0 +1,151 @@
+/* fonts */
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar-dreams';
+    src: url('../fonts/CaviarDreams/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global */
+html {
+    width: 100%;
+    height: 100%;
+    border-top: #0e83cd solid 3px;
+}
+body {
+    font-family: open-sans, Helvetica, Verdana, Arial, sans-serif;
+}
+
+header h1 {
+    font-family: caviar-dreams, Helvetica, Verdana, Arial, sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+figure > img {
+    width:100%;
+}
+
+figure {
+    margin: 0px;
+    padding: 0px;
+}
+
+.about h1 {
+    margin-top: 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/*
+ * Custom Progress Bar
+ * https://ocias.com/blog/unity-webgl-custom-progress-bar/
+ */
+
+div#loadingBox {
+    width: 960px;
+    height: 20px;
+    position: absolute;
+    top: 45%;
+    margin-top: -10px;
+    text-align: center;
+    z-index: 999;
+}
+
+div#bgBar {
+    position: absolute;
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+    height: 2px;
+    display: block;
+    background-color: #333;
+    z-index: 999;
+}
+div#progressBar {
+    left: 50%;
+    position: absolute;
+    margin-left: -100px;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    z-index: 999;
+}
+div#bgBar {
+    border-radius: 2px;
+    z-index: 999;
+}
+
+p#loadingInfo {
+    color: #666;
+    letter-spacing: 1px;
+    position: absolute;
+    width: 100%;
+    font-family: "Monaco", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8px;
+    margin-top: 10px;
+    z-index: 999;
+}
+
+
+/*
+ * Based off of Custom Button by Codrops
+ * https://github.com/codrops/CreativeButtons
+ */
+
+/* General button style (reset) */
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 560px;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+    color: #0e83cd;
+    background: #fff;
+    border: 3px solid #0e83cd;
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+    color: #fff;
+    background-color: #0e83cd;
+}
